@@ -25,8 +25,12 @@ h2 {
 
 .service-2 {
     background-color: limegreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .service-3 {
     background-color: teal;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
