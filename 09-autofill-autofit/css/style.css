@@ -1,11 +1,15 @@
-
 h2 {
     margin: 0;
 }
+
 .services {
     border: 3px solid black;
     height: 300px;
-    display:grid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 200px);
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fit, 200px);
 }
 
 .service {
@@ -20,15 +24,19 @@ h2 {
 .service-2 {
     background-color: rgb(8, 77, 8);
 }
+
 .service-3 {
     background-color: teal;
 }
+
 .service-4 {
     background-color: cornflowerblue;
 }
+
 .service-5 {
     background-color: crimson;
 }
+
 .service-6 {
     background-color: darkmagenta;
 }
