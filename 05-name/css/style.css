@@ -56,24 +56,43 @@ img {
     max-width: 800px;
     display: grid;
     grid-template-areas:
-        "title title title title"
-        "image desc desc desc ";
+        "title "
+        "tagline"
+        "info"
+        "image"
+        "entry";
     grid-gap: 1rem;
 }
 
+@media (min-width:480px) {
+    .media-container {
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-areas:
+            "title title"
+            "image tagline"
+            "image info"
+            "entry entry";
+    }
+}
 
-.site-title {}
+.site-title {
+    grid-area: title;
+}
 
-.tagline {}
+.tagline {
+    grid-area: tagline;
+}
 
 .image {
     grid-area: image;
 }
 
-.description {
-    grid-area: desc;
+
+.info {
+    grid-area: info;
 }
 
-.info {}
-
-.entry {}
+.entry {
+    grid-area: entry;
+}
