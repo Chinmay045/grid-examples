@@ -23,7 +23,7 @@ img {
         "header header header header"
         "main main main sidebar"
         "footer footer footer footer";
-    grid-gap: 1;
+    grid-gap: 1rem;
 }
 
 .header {
@@ -41,11 +41,12 @@ img {
 
 .sidebar {
     background-color: olive;
-    grid-area: footer;
+    grid-area: sidebar;
 }
 
 .footer {
     background-color: navy;
+    grid-area: footer;
 }
 
 
